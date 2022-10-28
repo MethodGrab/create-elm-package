@@ -1,11 +1,14 @@
 {
   "name": "create-elm-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An initializer for creating new Elm packages.",
   "type": "module",
   "exports": null,
   "bin": "./dist/cli.js",
-  "files": ["dist/**", "templates/**"],
+  "files": [
+    "dist/**",
+    "templates/**"
+  ],
   "scripts": {
     "build": "rm -rf ./dist && tsc --project ./tsconfig.build.json",
     "postbuild": "chmod +x ./dist/cli.js",
