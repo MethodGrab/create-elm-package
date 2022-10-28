@@ -1,0 +1,6 @@
+# Force Linguist to always identify .ts files as TypeScript.
+# Otherwise .ts files with a Node shebang are incorrectly identified as JavaScript.
+# https://github.com/github/linguist/issues/4469#issuecomment-475683753
+# https://github.com/github/linguist/issues/4923
+# https://github.com/github/linguist/issues/4112
+*.ts linguist-language=TypeScript
