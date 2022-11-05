@@ -10,9 +10,6 @@ runs:
         node-version: lts/*
         cache: 'npm'
 
-    # Re-use ~/.elm between runs until elm.json, elm-tooling.json or
-    # review/elm.json changes. The Elm compiler saves downloaded Elm packages
-    # to ~/.elm, and elm-tooling saves downloaded tool executables there.
     - name: Cache ~/.elm
       uses: actions/cache@v3
       with:
