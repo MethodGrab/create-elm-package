@@ -1,6 +1,6 @@
 # create-elm-package
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/MethodGrab/create-elm-package/CI?style=flat-square)](https://github.com/MethodGrab/create-elm-package/actions/workflows/CI.yaml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/MethodGrab/create-elm-package/CI.yaml?branch=main&style=flat-square)](https://github.com/MethodGrab/create-elm-package/actions/workflows/CI.yaml)
 [![npm version](https://img.shields.io/npm/v/create-elm-package?style=flat-square)](https://www.npmjs.com/package/create-elm-package)
 
 > An [npm initializer](https://docs.npmjs.com/cli/commands/npm-init) for creating new [Elm](https://elm-lang.org) packages.
@@ -25,7 +25,9 @@ Please review the generated code before using it to ensure it meets your needs a
 	- Automatically publish new versions using [`elm-publish-action`](https://github.com/dillonkearns/elm-publish-action).  
 		Note the initial version 1.0.0 must be published manually.
 
-Note the GitHub workflow assumes your default branch is called `main`. If that's not the case, you can update the 2 references to `main` at the top of `.github/workflows/CI.yaml` after you run the initializer.
+Note the GitHub workflow assumes your default branch is called `main`. If that's not the case, you should update the following places after you run the initializer:
+- The 2 references to `main` at the top of `.github/workflows/CI.yaml`.
+- `?branch=main` in the _GitHub Workflow Status_ badge URL in `README.md`.
 
 
 ## Development
